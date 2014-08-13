@@ -1,0 +1,30 @@
+{
+  "name": "Feed",
+  "homepage": "https://github.com/EvandroLG/Feed",
+  "authors": [
+    "evandrolg"
+  ],
+  "description": "A client-side library that work like a Feed Reader, returning all datas of a post - title, text, link, etc",
+  "main": "src/feed.min.js",
+  "keywords": [
+    "feed",
+    "rss",
+    "feed reader",
+    "reader"
+  ],
+  "ignore": [
+    "**/.*",
+    "test"
+  ],
+  "license": "MIT",
+  "_release": "288ac5eeda",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "288ac5eedad9a2213c858b01564b43edff579bf4"
+  },
+  "_source": "git://github.com/EvandroLG/Feed.git",
+  "_target": "*",
+  "_originalSource": "EvandroLG/Feed",
+  "_direct": true
+}

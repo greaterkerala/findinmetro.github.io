@@ -6,3 +6,10 @@ Indian state Kerala, regionally referred to as Keralam, is a state in the south-
 	<b>Capital:</b> Thiruvananthapuram<br>
 	<b>Population:</b> 34.8 million (2012)<br>
 </blockquote>
+ <h2>News Headlines</h2>
+<ul ng-repeat="nn in news">
+	<li> <strong><a href="{{nn.link}}">{{nn.title}}</a></strong> [{{nn.publishedDate}}]<br>
+		{{nn.contentSnippet}}
+	</li>
+</ul> 
+EOF
