@@ -2,7 +2,9 @@
 
   <!-- App Script -->
     var myapp = angular.module('myapp', ["ui.router", "myapp.controllers", "myapp.filters"])
-    myapp.config(function($stateProvider){
+    myapp.config(function($urlRouterProvider, $stateProvider){
+    $urlRouterProvider.otherwise('/');
+
     $stateProvider
         .state('index', {
             url: "/",
