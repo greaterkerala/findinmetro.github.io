@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+    <title>Ente Keralam</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/app.css"/>
+
+</head>
+
+<body >
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-2 hidden-sm hidden-xs"><img src="img/logo/logo.png" width="150px"></div>
+      <div class="col-md-10"><h1>Ente Keralam <small>God's Own Country</small></h1></div>
+    </div>
+
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li ><a ui-sref="index">Home</a></li>
+            <li ><a ui-sref="about">About</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div ui-view="viewA"></div>        
+    <div  ui-view="viewB"></div>        
+</div>
+  
+  <!-- Angular -->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <!-- UI-Router -->
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/Feed/src/feed.js"></script>  
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+
+</body>
+
+</html>

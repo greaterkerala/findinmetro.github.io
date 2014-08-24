@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', [])
+angular.module('myapp.controllers', [])
 .controller('Home', ['$scope', function($scope) {
 	$scope.news = [];
 	function render(posts){
