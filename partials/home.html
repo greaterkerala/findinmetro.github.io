@@ -8,8 +8,13 @@ Indian state Kerala, regionally referred to as Keralam, is a state in the south-
 </blockquote>
  <h2>News Headlines</h2>
 <ul ng-repeat="nn in news">
-	<li> <strong><a href="{{nn.link}}">{{nn.title}}</a></strong> [{{nn.publishedDate}}]<br>
+	<blockquote>
+		<a href="{{nn.link}}">{{nn.title}}</a>
+		<footer class="text-right">[{{nn.publishedDate}}]<br></footer>
 		{{nn.contentSnippet}}
-	</li>
+	</blockquote>
+	  
+		
+
 </ul> 
 EOF
