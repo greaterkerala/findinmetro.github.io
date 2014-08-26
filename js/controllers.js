@@ -29,6 +29,7 @@ angular.module('myapp.controllers', [])
 		var feed = new google.feeds.Feed(feedurl);
 		feed.load(function(result){
 			alert(JSON.stringify(result));
+			$scope.news = result.feed.entries;
 		});
 		alert("after");
 
