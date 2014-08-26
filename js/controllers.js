@@ -35,15 +35,6 @@ angular.module('myapp.controllers', [])
 			$scope.news = result.feed.entries;
 		});
 
-
-		// $http({method: 'GET', url: feedurl}).
-		// success(function(data, status, headers, config) {
-		// 	var myJsonObject=xml2json.parser(data);
-		// 	$scope.news = myJsonObject.rss.channel.item;
-		// }).
-		// error(function(data, status, headers, config) {
-		// 	alert(data);
-		// });
-};
+	};
 
 }]);
