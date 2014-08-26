@@ -23,7 +23,7 @@ angular.module('myapp.controllers', [])
 
 		var feedurl = "https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo="+ city +"&output=rss";
 
-		 $http.jsonp(feedurl).
+		 $http({method: 'GET', url: feedurl}).
 		    success(function(data, status, headers, config) {
 		    	var myJsonObject=xml2json.parser(data);
 		    	$scope.news = myJsonObject.rss.channel.item;
