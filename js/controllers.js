@@ -25,16 +25,23 @@ angular.module('myapp.controllers', [])
 		var feedurl = "http://xml.feedcat.net/" + url;
 		//feedurl = "http://xml.feedcat.net/896641";
 
+		alert("before")
+		var feed = new google.feeds.Feed(feedurl);
+		feed.load(function(result){
+			alert(JSON.stringify(result));
+		});
+		alert("after");
 
-		 $http({method: 'GET', url: feedurl}).
-		    success(function(data, status, headers, config) {
-		    	var myJsonObject=xml2json.parser(data);
-		    	$scope.news = myJsonObject.rss.channel.item;
-		    }).
-		    error(function(data, status, headers, config) {
-		    	alert(data);
-		    });
-		};
+
+		$http({method: 'GET', url: feedurl}).
+		success(function(data, status, headers, config) {
+			var myJsonObject=xml2json.parser(data);
+			$scope.news = myJsonObject.rss.channel.item;
+		}).
+		error(function(data, status, headers, config) {
+			alert(data);
+		});
+	};
 
 	$scope.setFeedUrl("896641");
 }]);
