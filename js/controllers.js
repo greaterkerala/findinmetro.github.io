@@ -21,7 +21,9 @@ angular.module('myapp.controllers', [])
 	$scope.news = [];
 	$scope.setFeedUrl = function(city){
 
+		//https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo=Trivandrum&output=rss
 		var feedurl = "https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo="+ city +"&output=rss";
+		feedurl = "http://xml.feedcat.net/896641";
 
 		 $http({method: 'GET', url: feedurl}).
 		    success(function(data, status, headers, config) {
