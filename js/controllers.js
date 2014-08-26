@@ -22,7 +22,7 @@ angular.module('myapp.controllers', [])
 	$scope.setFeedUrl = function(url){
 
 		//https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo=Trivandrum&output=rss
-		var feedurl = "https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo=Trivandrum&output=rss";
+		var feedurl = "https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo="+ url +"&output=rss";
 		//feedurl = "http://xml.feedcat.net/896641";
 
 		alert("before")
@@ -43,5 +43,5 @@ angular.module('myapp.controllers', [])
 		// });
 	};
 
-	$scope.setFeedUrl("896641");
+	$scope.setFeedUrl("Thiruvananthapuram");
 }]);
