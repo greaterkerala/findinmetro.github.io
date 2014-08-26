@@ -19,11 +19,12 @@ angular.module('myapp.controllers', [])
 }])
 .controller('LocalNews', ['$scope', '$http', function($scope, $http) {
 	$scope.news = [];
-	$scope.setFeedUrl = function(city){
+	$scope.setFeedUrl = function(url){
 
 		//https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo=Trivandrum&output=rss
-		var feedurl = "https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo="+ city +"&output=rss";
-		feedurl = "http://xml.feedcat.net/896641";
+		var feedurl = "http://xml.feedcat.net/" + url;
+		//feedurl = "http://xml.feedcat.net/896641";
+
 
 		 $http({method: 'GET', url: feedurl}).
 		    success(function(data, status, headers, config) {
@@ -35,5 +36,5 @@ angular.module('myapp.controllers', [])
 		    });
 		};
 
-	$scope.setFeedUrl("Thiruvananthapuram");
+	$scope.setFeedUrl("896641");
 }]);
