@@ -1,0 +1,27 @@
+<div>
+	<h2>Local News</h2>
+	<button type="button" class="btn btn-default" ng-click="setFeedUrl('Alappuzha');" >Alappuzha</button>
+	<button type="button" class="btn btn-default" ng-click="setFeedUrl('Ernakulam');">Ernakulam</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Idukki');">Idukki</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Kannur');">Kannur</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Kasaragod');">Kasaragod</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Kollam');">Kollam</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Kottayam');">Kottayam</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Kozhikode');">Kozhikode</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Malappuram');">Malappuram</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Palakkad');">Palakkad</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Pathanamthitta');">Pathanamthitta</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Thrissur');">Thrissur</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Thiruvananthapuram');">Thiruvananthapuram</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Wayanad');">Wayanad</button>
+	<br><br>
+	<ul ng-repeat="nn in news">
+		<blockquote>
+			<p ng-bind-html="nn.description | decode | unsafe"></p>
+			<footer class="text-right">[{{nn.pubdate}}]<br></footer>
+		</blockquote>
+	</ul> 
+</div>
+
+
+

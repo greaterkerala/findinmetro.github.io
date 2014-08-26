@@ -17,6 +17,21 @@ angular.module('myapp.controllers', [])
 		callback: render
 	});
 }])
-.controller('MyCtrl2', ['$scope', function($scope) {
+.controller('LocalNews', ['$scope', '$http', function($scope, $http) {
+	$scope.news = [];
+	$scope.setFeedUrl = function(city){
 
+		var feedurl = "https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo="+ city +"&output=rss";
+
+		 $http({method: 'GET', url: feedurl}).
+		    success(function(data, status, headers, config) {
+		    	var myJsonObject=xml2json.parser(data);
+		    	$scope.news = myJsonObject.rss.channel.item;
+		    }).
+		    error(function(data, status, headers, config) {
+		    	alert(data);
+		    });
+		};
+
+	$scope.setFeedUrl("Thiruvananthapuram");
 }]);

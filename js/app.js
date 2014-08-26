@@ -18,6 +18,18 @@
                 }
             }
         })
+        .state('localnews', {
+            url: "/localnews",
+            views: {
+                "viewA": {
+                    templateUrl: "partials/localnews.html",
+                    controller: "LocalNews"
+                },
+                "viewB": {
+                    templateUrl: "partials/footer.html"
+                }
+            }
+        })
         .state('about', {
             url: "/about",
             views: {
