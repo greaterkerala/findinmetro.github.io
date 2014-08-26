@@ -1,23 +1,23 @@
 <div>
 	<h2>Local News</h2>
-	<button type="button" class="btn btn-default" ng-click="setFeedUrl('896642');" >Alappuzha</button>
-	<button type="button" class="btn btn-default" ng-click="setFeedUrl('896643');">Ernakulam</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896644');">Idukki</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896645');">Kannur</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896646');">Kasaragod</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896647');">Kollam</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896648');">Kottayam</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896649');">Kozhikode</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896650');">Malappuram</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896651');">Palakkad</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896652');">Pathanamthitta</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896653');">Thrissur</button>
+	<button type="button" class="btn btn-default" ng-click="setFeedUrl('Alappuzha');" >Alappuzha</button>
+	<button type="button" class="btn btn-default" ng-click="setFeedUrl('Ernakulam');">Ernakulam</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Idukki');">Idukki</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Kannur');">Kannur</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Kasaragod');">Kasaragod</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Kollam');">Kollam</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Kottayam');">Kottayam</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Kozhikode');">Kozhikode</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Malappuram');">Malappuram</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Palakkad');">Palakkad</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Pathanamthitta');">Pathanamthitta</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Thrissur');">Thrissur</button>
 	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Thiruvananthapuram');">Thiruvananthapuram</button>
-	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('896654');">Wayanad</button>
+	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Wayanad');">Wayanad</button>
 	<br><br>
 	<ul ng-repeat="nn in news">
 		<blockquote>
-			<p ng-bind-html="nn.content | decode | unsafe"></p>
+			<p ng-bind-html="nn.content |  unsafe"></p>
 			<footer class="text-right">[{{nn.publishedDate}}]<br></footer>
 		</blockquote>
 		<hr>

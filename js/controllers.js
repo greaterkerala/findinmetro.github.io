@@ -25,15 +25,10 @@ angular.module('myapp.controllers', [])
 		var feedurl = "https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo="+ url +"&output=rss";
 		//feedurl = "http://xml.feedcat.net/896641";
 
-		alert("before")
 		var feed = new google.feeds.Feed(feedurl);
 		feed.load(function(result){
-			alert(JSON.stringify(result));
-			$scope.$apply(function(){
-				$scope.news = result.feed.entries;
-			};
+			$scope.news = result.feed.entries;
 		});
-			alert("after");
 
 
 		// $http({method: 'GET', url: feedurl}).
@@ -44,7 +39,7 @@ angular.module('myapp.controllers', [])
 		// error(function(data, status, headers, config) {
 		// 	alert(data);
 		// });
-	};
+};
 
-	$scope.setFeedUrl("Thiruvananthapuram");
+setTimeout($scope.setFeedUrl("Thiruvananthapuram"), 10000);
 }]);
