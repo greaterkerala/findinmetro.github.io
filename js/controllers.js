@@ -22,7 +22,7 @@ angular.module('myapp.controllers', [])
 	$scope.setFeedUrl = function(url){
 
 		//https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo=Trivandrum&output=rss
-		var feedurl = "http://xml.feedcat.net/" + url;
+		var feedurl = "https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo=Trivandrum&output=rss";
 		//feedurl = "http://xml.feedcat.net/896641";
 
 		alert("before")
@@ -33,14 +33,14 @@ angular.module('myapp.controllers', [])
 		alert("after");
 
 
-		$http({method: 'GET', url: feedurl}).
-		success(function(data, status, headers, config) {
-			var myJsonObject=xml2json.parser(data);
-			$scope.news = myJsonObject.rss.channel.item;
-		}).
-		error(function(data, status, headers, config) {
-			alert(data);
-		});
+		// $http({method: 'GET', url: feedurl}).
+		// success(function(data, status, headers, config) {
+		// 	var myJsonObject=xml2json.parser(data);
+		// 	$scope.news = myJsonObject.rss.channel.item;
+		// }).
+		// error(function(data, status, headers, config) {
+		// 	alert(data);
+		// });
 	};
 
 	$scope.setFeedUrl("896641");
