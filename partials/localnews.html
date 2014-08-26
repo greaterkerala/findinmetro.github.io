@@ -15,6 +15,7 @@
 	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Thiruvananthapuram');">Thiruvananthapuram</button>
 	<button type="button" class="btn btn-default"  ng-click="setFeedUrl('Wayanad');">Wayanad</button>
 	<br><br>
+	<H4 class="text-center" ng-hide="url">Select an edition</H4>
 	<ul ng-repeat="nn in news">
 		<blockquote>
 			<p ng-bind-html="nn.content |  unsafe"></p>

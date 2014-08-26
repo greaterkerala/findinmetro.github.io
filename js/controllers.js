@@ -19,8 +19,13 @@ angular.module('myapp.controllers', [])
 }])
 .controller('LocalNews', ['$scope', '$http', function($scope, $http) {
 	$scope.news = [];
+	$scope.url = null;
 	$scope.setFeedUrl = function(url){
+		$scope.url = url;
 
+		$scope.urlAvailable = function(){
+			return ($scope.url == "");
+		};
 		//https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo=Trivandrum&output=rss
 		var feedurl = "https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo="+ url +"&output=rss";
 		//feedurl = "http://xml.feedcat.net/896641";
@@ -41,5 +46,4 @@ angular.module('myapp.controllers', [])
 		// });
 };
 
-setTimeout($scope.setFeedUrl("Thiruvananthapuram"), 10000);
 }]);
