@@ -1,0 +1,14 @@
+
+<div data-ng-init="setFeedUrl('http://mariasmenu.com/feed');">
+	<h2>Some Kerala Recipies</h2>
+	<ul ng-repeat="nn in news">
+		<blockquote>
+			<a href="{{nn.link}}">{{nn.title}}</a>
+			<footer class="text-right">[{{nn.publishedDate}}]<br></footer>
+			<div ng-bind-html="nn.content |  unsafe"></div>
+		</blockquote>
+		<hr>
+	</ul> 
+
+	<small>Courtesy "Marias Menu" </small>
+</div>
