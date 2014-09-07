@@ -30,6 +30,18 @@
                 }
             }
         })
+        .state('newspapers', {
+            url: "/newspapers",
+            views: {
+                "viewA": {
+                    templateUrl: "partials/newspapers.html",
+                    controller: "newspaper"
+                },
+                "viewB": {
+                    templateUrl: "partials/footer.html"
+                }
+            }
+        })
         .state('taste', {
             url: "/taste",
             views: {

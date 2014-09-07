@@ -2,54 +2,28 @@
 <html ng-app="myapp">
 
 <head>
-    <title>Ente Keralam</title>
+  <title>Ente Keralam</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
   <link rel="stylesheet" href="bower_components/bootstrap/lib/css/bootstrap.css">
 
-    <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/app.css"/>
 
 </head>
 
 <body >
 
+  <div ng-include="'partials/menu.html'"></div>
 
- <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a class="navbar-brand" href="#"><img src="img/logo/logo.png" width="50px">Ende Keralam</a>
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a ui-sref="index">Home</a></li>
-            <li><a ui-sref="localnews">Local News</a></li>
-            <li><a ui-sref="taste">Taste</a></li>
-            <li><a ui-sref="about">About</a></li>
-            
-          </ul>
-        </div>
-      </div>
-    </div>
-
-
-
-<br><br>
-<div class="container">
+  <div class="container">
     <div ui-view="viewA"></div>        
     <div  ui-view="viewB"></div>        
-</div>
-  
+  </div>
+
   <!-- jQuery -->
   <script src="bower_components/jquery/lib/jquery.js"></script>
   <script src="js/xml2json.js"></script>
@@ -69,7 +43,7 @@
   <script src="js/directives.js"></script>
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript">
-    google.load("feeds", "1");
+  google.load("feeds", "1");
   </script>
 </body>
 
