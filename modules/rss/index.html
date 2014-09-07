@@ -1,0 +1,11 @@
+<div ng-controller="RSSCtrl" ng-init="init();">
+	<h3>{{module.Title}}</h3>
+	<hr>
+	<ul ng-repeat="nn in news">
+		<blockquote>
+			<a href="{{nn.link}}">{{nn.title}}</a>
+			<footer class="text-right">[{{nn.publishedDate}}]<br></footer>
+			{{nn.contentSnippet}}
+		</blockquote>
+	</ul> 
+</div>

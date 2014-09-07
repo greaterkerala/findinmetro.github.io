@@ -1,0 +1,28 @@
+<div ng-controller="LayoutCtrl" data-ng-init="initlayout();">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<div class="row clearfix">
+				<div class="col-md-8 column">
+					<div class="row clearfix">
+						<div class="col-md-12 column well" ng-repeat="module in metadata.contentpanemodules"> 
+							<!-- Content Pane -->
+							<div ng-include="'modules/'+module.type+'/index.html'"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 column well" ng-repeat="module in metadata.upperrightpanemodules">
+					<!-- Upper Right Pane  -->
+					<div ng-include="'modules/'+module.type+'/index.html'"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="row clearfix">
+		<div class="col-md-3 column well" ng-repeat="module in metadata.horizontalscrollmodules">
+			<!-- Horizontal Scroll -->
+			<div ng-include="'modules/'+module.type+'/index.html'"></div>
+		</div>
+	</div>
+</div>
+	

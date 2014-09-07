@@ -1,0 +1,61 @@
+
+.searchfield {
+	
+}
+
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+
+.well{
+  min-height: 100px;
+}
+
+
+.view-animate.ng-enter {
+ opacity: 0;
+ width: 0px;
+ height: 0px;
+}
+.view-animate.ng-leave {
+  -webkit-transition: 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000) all;
+  -moz-transition: 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000) all;
+  -ms-transition: 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000) all;
+  -o-transition: 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000) all;
+  transition: 100ms cubic-bezier(0.420, 0.000, 1.000, 1.000) all;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space:nowrap;
+}
+
+
