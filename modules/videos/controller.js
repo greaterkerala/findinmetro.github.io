@@ -1,13 +1,13 @@
 'use strict';
 
 function Videos ($scope, $http) {
-	$scope.videos = [];
+	$scope.data = [];
 
 
 	$scope.init = function() {
 		$http.get($scope.module.Data.url)
 		.success(function (data) {
-			$scope.videos = data;
+			$scope.data = data;
 			$scope.$apply();
 		})
 		.error(function (data, status, headers, config) {

@@ -1,30 +1,9 @@
-[
-	{
-		color: "red",
-		value: "#f00"
-	},
-	{
-		color: "green",
-		value: "#0f0"
-	},
-	{
-		color: "blue",
-		value: "#00f"
-	},
-	{
-		color: "cyan",
-		value: "#0ff"
-	},
-	{
-		color: "magenta",
-		value: "#f0f"
-	},
-	{
-		color: "yellow",
-		value: "#ff0"
-	},
-	{
-		color: "black",
-		value: "#000"
-	}
-]
+{
+	"videos": [
+	{"width":"230", "height":"189", "src":"http://www.youtube.com/embed/pG3kzWXWjMk", "frameborder":"0" },  
+	{"width":"230", "height":"189", "src":"http://www.youtube.com/embed/oc8oOksJHZk", "frameborder":"0" },  
+	{"width":"230", "height":"189", "src":"http://www.youtube.com/embed/hxU_bsel_PQ", "frameborder":"0" },  
+	{"width":"230", "height":"189", "src":"http://www.youtube.com/embed/VXZMrqdDNlQ", "frameborder":"0" },  
+	{"width":"230", "height":"189", "src":"http://www.youtube.com/embed/t0YxFMeFUbQ", "frameborder":"0" }
+	]
+}
