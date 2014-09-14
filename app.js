@@ -275,7 +275,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
 
 	"/tradition/panchangam",
 	"/tradition/taste",
-	"/tradition/about"
+	"/about"
 
 
 	];
