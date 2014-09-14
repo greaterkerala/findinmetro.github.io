@@ -1,0 +1,7 @@
+<div ng-controller="Videos" ng-init="init();">
+	<h3>{{module.Title}}</h3>
+
+	<ul ng-repeat="nn in videos">
+		<iframe width="{{nn.width}}" height="{{nn.height}}" src="{{nn.src}}" frameborder="{{nn.frameborder}}" allowfullscreen></iframe>
+	</ul> 
+</div>

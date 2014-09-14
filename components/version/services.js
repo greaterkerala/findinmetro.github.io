@@ -19,20 +19,29 @@ myApp.factory('metadataService', function() {
 	var metadataService = {
 		getMetaData: function (path) {
 			return {
+				topscrollmodules:
+				[
+				],
+
+				leftpanemodules : 
+				[
+				{type:"videos", Title: "Videos", Data: {url:"data/kerala/gallery/video/home-videos.js"}}, 
+				],
 				contentpanemodules : 
 				[
 				{type:"rss",  Title: "News Headlines",   Data: "http://feeds.feedburner.com/mathrubhumi"}, 
 				],
-
-				horizontalscrollmodules:
+				rightpanemodules:
 				[
+				{type:"flickr", Title: "New Photos", Data: {url:"https://api.flickr.com/services/feeds/photos_public.gne?tags=kerala tradition", limit:20}},
+				
 				],
-				upperrightpanemodules:
+
+				bottomscrollmodules:
 				[
 				{type:"html", Title: "Keralam", Data: "data/kerala/about/about.html"}, 
-				{type:"flickr", Title: "New Photos", Data: {url:"https://api.flickr.com/services/feeds/photos_public.gne?tags=kerala", limit:20}},
-				// {type:"youtube", Title: "New Videos", Data: {url:"http://gdata.youtube.com/feeds/api/videos?q=kerala&v=2", limit:5}}, 
 				],
+
 			};
 		}
 

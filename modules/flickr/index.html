@@ -1,8 +1,9 @@
-<div ng-controller="Flickr" ng-init="init();">
+<div class="well" ng-controller="Flickr" ng-init="init();">
 	<h3>{{module.Title}}</h3>
 	<hr>
-	<ul ng-repeat="nn in news">
-		<p ng-bind-html="nn.content |  unsafe"></p>	
-
+	<ul ng-repeat="nn in images">
+		<img class="img-rounded img-responsive" src={{nn.src}} />
+		<p ng-bind-html="nn.alt || nn.p |  unsafe"></p>	
+		<br>
 	</ul> 
 </div>
