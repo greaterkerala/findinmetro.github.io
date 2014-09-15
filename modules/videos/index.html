@@ -2,7 +2,7 @@
 	<h3>{{module.Title}}</h3>
 
 	<div ng-repeat="nn in data.videos">
-		<iframe width="{{nn.width}}" height="{{nn.height}}" src="{{nn.src | trusted}}" frameborder="{{nn.frameborder}}" allowfullscreen></iframe>
+		<iframe width="100%" height="{{nn.height}}" src="{{nn.src | trusted}}" frameborder="{{nn.frameborder}}" allowfullscreen></iframe>
 		<br>
 	</div> 
 </div>
