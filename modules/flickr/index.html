@@ -2,7 +2,7 @@
 	<h3>{{module.Title}}</h3>
 	<hr>
 	<ul ng-repeat="nn in images">
-		<img class="img-rounded img-responsive" src={{nn.src}} />
+		<img class="img-rounded img-responsive" style="width: 100%" src={{nn.src}} />
 		<p ng-bind-html="nn.alt || nn.p |  unsafe"></p>	
 		<br>
 	</ul> 
