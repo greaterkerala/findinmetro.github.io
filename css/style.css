@@ -61,13 +61,5 @@
 
 body
 {
-/*  background-image: url("../images/kerala-bg.jpg");
-  background-size:cover;
-  -webkit-background-size: cover !important;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-*/
-
-
 background: url(../images/kerala-bg.jpg) 100% 100% no-repeat fixed rgb(0, 0, 0);
 }
