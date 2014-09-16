@@ -4,7 +4,7 @@
 	<ul class="well" ng-repeat="nn in news">
 		<blockquote>
 			<a href="{{nn.link}}">{{nn.title}}</a>
-			<footer class="text-right">[{{nn.publishedDate}}]<br></footer>
+			<footer class="text-right" ng-bind-html="getreadabledate(nn.publishedDate)  |  unsafe"></footer>
 			{{nn.contentSnippet}}
 		</blockquote>
 	</ul> 

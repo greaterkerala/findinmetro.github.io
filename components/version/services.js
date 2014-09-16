@@ -25,7 +25,8 @@ myApp.factory('metadataService', function() {
 
 				leftpanemodules : 
 				[
-				{type:"videos", Title: "Videos", Data: {url:"data/kerala/gallery/video/home-videos.js"}}, 
+				 {type:"weather", Title: "Current Weather", Data: {height: "400px", lat: "10.5415985", lon:"76.1302717"}}, 
+				 {type:"videos", Title: "Videos", Data: {url:"data/kerala/gallery/video/home-videos.js"}}, 
 				],
 				contentpanemodules : 
 				[
@@ -34,7 +35,6 @@ myApp.factory('metadataService', function() {
 				rightpanemodules:
 				[
 				{type:"flickr", Title: "New Photos", Data: {url:"https://api.flickr.com/services/feeds/photos_public.gne?tags=kerala tradition", limit:20}},
-				
 				],
 
 				bottomscrollmodules:
