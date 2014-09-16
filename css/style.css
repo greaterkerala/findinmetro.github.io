@@ -61,11 +61,13 @@
 
 body
 {
-  background-image: url("../images/kerala-bg.jpg");
+/*  background-image: url("../images/kerala-bg.jpg");
   background-size:cover;
-  -webkit-background-size: cover !important
-  /*background-image: url("http://tourstokerala.org/wp-content/uploads/2014/02/TOURS-TO-KERALA-11.jpg");*/
-
+  -webkit-background-size: cover !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
+*/
+
+
+background: url(../images/kerala-bg.jpg) 100% 100% no-repeat fixed rgb(0, 0, 0);
 }
