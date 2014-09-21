@@ -1,6 +1,7 @@
+//https://gdata.youtube.com/feeds/api/videos?q=kerala%20travel&orderby=viewCount&max-results=10&alt=json
 'use strict';
 
-function Videos ($scope, $http) {
+function Staticyoutube ($scope, $http) {
 	$scope.data = [];
 
 

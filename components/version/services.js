@@ -26,7 +26,7 @@ myApp.factory('metadataService', function() {
 				leftpanemodules : 
 				[
 				 {type:"weather", Title: "Current Weather", Data: {height: "400px", lat: "10.5415985", lon:"76.1302717"}}, 
-				 {type:"videos", Title: "Videos", Data: {url:"data/kerala/gallery/video/home-videos.js"}}, 
+				 {type:"staticyoutube", Title: "Editor Picks", Data: {url:"data/kerala/gallery/video/home-videos.js"}}, 
 				],
 				contentpanemodules : 
 				[
