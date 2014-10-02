@@ -15,7 +15,7 @@ function RSSCtrl ($scope) {
 		//var feedurl = "https://news.google.com/news/feeds?pz=1&cf=all&ned=in&hl=en&geo="+ url +"&output=rss";
 		var feedurl = url;
 		var feed = new google.feeds.Feed(feedurl);
-		feed.setNumEntries(100);
+		feed.setNumEntries($scope.module.limit);
 		feed.load(function(result){
 			$scope.news = result.feed.entries;
 			$scope.$apply();

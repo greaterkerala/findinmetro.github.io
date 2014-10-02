@@ -11,7 +11,7 @@
 	],
 	"contentpanemodules" : 
 	[
-	{"type":"rss",  "Title": "News Headlines",   "Data": "http://feeds.feedburner.com/mathrubhumi"}
+	{"type":"rss",  "Title": "News Headlines",   "Data": "http://feeds.feedburner.com/mathrubhumi", "limit":"50" }
 	],
 	"rightpanemodules":
 	[

@@ -226,7 +226,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
 	"/explore/spiritual/vadakkumnathan-temple",
 	"/explore/spiritual/vaikom-temple",
 	"/explore/spiritual/valiyapalli-church",
-	"/explore/spiritual/valliyoorkkavu-temple",
+	"/explore/spiritual/valliyoorkkavu-temple"
 
 	];
 	var homelayoutItems = [
@@ -257,6 +257,8 @@ myApp.config(['$routeProvider', function($routeProvider) {
 	"/explore/festivals",
 	"/explore/historical",
 	"/explore/spiritual",
+	"/explore/photos",
+	"/explore/videos",
 
 
 	"/travel/airports",
