@@ -1,0 +1,17 @@
+<div class="well" ng-controller="Lyrics" ng-init="init();">
+	<h3>{{module.Title}}</h3>
+	<hr>
+	<div ng-repeat="nn in data">
+		<blockquote>
+			 <h4>{{nn.Title}}</h4>
+			<em>Movie:</em> {{nn.Movie}}<br>
+			<em>Year:</em>{{nn.Year}}<br>
+			<em>Actor:</em> {{nn.Actor}}<br>
+			<em>Actress:</em> {{nn.Actress}}<br>
+			<em>Lyricist:</em> {{nn.Lyricist}}<br>
+			<em>Music:</em> {{nn.Music}}<br>
+			<em>Singers:</em> {{nn.Singers}}<br>
+		</blockquote>
+		<hr>
+	</div> 
+</div>

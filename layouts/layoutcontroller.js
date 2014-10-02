@@ -1,10 +1,18 @@
 'use strict';
 
-function LayoutCtrl ($scope, $location, Utilities, metadataService) {
+function LayoutCtrl ($scope, $http, $location, Utilities, metadataService) {
 
 	$scope.metadata = [];
 	
 	$scope.initlayout = function() {
-		$scope.metadata = metadataService.getMetaData($location.path());
+
+		$http.get("metadata"+ $location.path() +".js")
+		.success(function (data) {
+			$scope.metadata  = data;
+		})
+		.error(function (data, status, headers, config) {
+			alert("Failed to load videos");
+		});
+
 	}
 }

@@ -9,7 +9,6 @@ function Staticyoutube ($scope, $http) {
 		$http.get($scope.module.Data.url)
 		.success(function (data) {
 			$scope.data = data;
-			$scope.$apply();
 		})
 		.error(function (data, status, headers, config) {
 			alert("Failed to load videos");
