@@ -11,6 +11,7 @@
 	{"type":"rss",  "Title": "News Headlines",   "Data": "http://feeds.feedburner.com/mathrubhumi"}
 	{"type":"flickr", "Title": "New Photos", "Data": {"url":"https://api.flickr.com/services/feeds/photos_public.gne?tags=kerala landscape", "limit":"20"}}
 	{"type":"html", "Title": "Keralam", "Data": "data/kerala/about/about.html"}
+	{"type":"listing", "Title": "Sample List", "Data": {"url":"data/kerala/gallery/video/home-videos.js"}}
 	],
 	"contentpanemodules" : 
 	[

@@ -1,0 +1,26 @@
+<div class="well" ng-controller="Listing" ng-init="init();">
+	<h3>{{module.Title}}</h3>
+	<hr>
+	<div class="row">
+		<div  ng-repeat="rows in list | partition:2">
+			<div class="col-md-6">
+				<div class="span6" ng-repeat="item in rows">					
+					<div class="thumbnail">
+						<img alt="{{item.Thumbnail_Image_Alt}}" src="{{item.Thumbnail_Image}}" />
+						<div class="caption">
+							<h3>
+								{{item.Title}}
+							</h3>
+							<p>
+								{{item.Brief_Description}}
+							</p>
+							<p ng-repeat="action in item.Actions">
+								<a  class="btn btn-primary" href="#">Action</a> 
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
