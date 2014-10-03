@@ -60,19 +60,7 @@
 		[
 		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=12.5,75&q=12.5,75&hl=en&t=m&z=12"}
 		]
-	} 	,
-	{
-		"Title":"Kollam", 
-		"Brief_Description":"The district has a cross-section of Kerala's natural attributes; it is endowed with a long coastline, a major Arabian Sea seaport and an inland lake (Ashtamudi Lake). Kollam is the capital of Kerala's cashew industry. Plains, mountains, lakes, lagoons and backwaters, forests, farmland and rivers make up the topography of the district.", 
-		"Thumbnail_Image":"data/kerala/travel/districts/kollam/Paravur_backwaters_&_beaches.jpg", 
-		"Thumbnail_Image_Alt":"Scenic beauty of backwaters and beaches", 
-		"Landing_Image":"", 
-		"Landing_Image_Alt":"", 
-		"Actions": 
-		[
-		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=8.8,76.6&q=8.8,76.6&hl=en&t=m&z=12"}
-		]
-	} 	,
+	} ,
 	{
 		"Title":"Kollam", 
 		"Brief_Description":"The district has a cross-section of Kerala's natural attributes; it is endowed with a long coastline, a major Arabian Sea seaport and an inland lake (Ashtamudi Lake). Kollam is the capital of Kerala's cashew industry. Plains, mountains, lakes, lagoons and backwaters, forests, farmland and rivers make up the topography of the district.", 
@@ -97,30 +85,6 @@
 		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=9.595,76.531&q=9.595,76.531&hl=en&t=m&z=12"}
 		]
 	}  	,
-	{
-		"Title":"Kozhikode", 
-		"Brief_Description":"Calicut is the anglicized form of Kalikooth, the name used by Arabs to refer to Kozhikode. ", 
-		"Thumbnail_Image":"data/kerala/travel/districts/kozhikode/320px-Kappad_beach_2.jpg", 
-		"Thumbnail_Image_Alt":"View of Kappad beach", 
-		"Landing_Image":"", 
-		"Landing_Image_Alt":"", 
-		"Actions": 
-		[
-		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=9.595,76.531&q=9.595,76.531&hl=en&t=m&z=12"}
-		]
-	},
-	{
-		"Title":"Malappuram", 
-		"Brief_Description":"The classic medieval center of learning Vedic and local politics, Thirunavaya, home of the traditional Ayurveda medicine, Kottakkal and one of the oldest centre of education of Islam the region, Ponnani are situated in Malappuram district. Malappuram district comprises a vast wildlife collection and a number of small hills, forests, little rivers and streams flowing to the west, backwaters and paddy, arecanut, cashew nut, pepper, ginger, pulses, coconut, banana, tapioca, and rubber plantations. ", 
-		"Thumbnail_Image":"data/kerala/travel/districts/malappuram/320px-Kadalundi_Bird_Sanctuary.jpg", 
-		"Thumbnail_Image_Alt":"Kadalundi Bird Sanctuary", 
-		"Landing_Image":"", 
-		"Landing_Image_Alt":"", 
-		"Actions": 
-		[
-		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=11.03,76.05&q=11.03,76.05&hl=en&t=m&z=12"}
-		]
-	},
 	{
 		"Title":"Palakkad", 
 		"Brief_Description":"Palakkad is the gateway to Kerala due to the presence of the Palakkad Gap, in the Western Ghats. Palakkad is the gateway to Kerala due to the presence of the Palakkad Gap, in the Western Ghats. ", 
@@ -180,7 +144,43 @@
 		[
 		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=11.605,76.083&q=11.605,76.083&hl=en&t=m&z=12"}
 		]
-	}
+	},
+	{
+		"Title":"Malappuram", 
+		"Brief_Description":"The classic medieval center of learning Vedic and local politics, Thirunavaya, home of the traditional Ayurveda medicine, Kottakkal and one of the oldest centre of education of Islam the region, Ponnani are situated in Malappuram district. Malappuram district comprises a vast wildlife collection and a number of small hills, forests, little rivers and streams flowing to the west, backwaters and paddy, arecanut, cashew nut, pepper, ginger, pulses, coconut, banana, tapioca, and rubber plantations. ", 
+		"Thumbnail_Image":"data/kerala/travel/districts/malappuram/320px-Kadalundi_Bird_Sanctuary.jpg", 
+		"Thumbnail_Image_Alt":"Kadalundi Bird Sanctuary", 
+		"Landing_Image":"", 
+		"Landing_Image_Alt":"", 
+		"Actions": 
+		[
+		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=11.03,76.05&q=11.03,76.05&hl=en&t=m&z=12"}
+		]
+	},
+	{
+		"Title":"Kozhikode", 
+		"Brief_Description":"Calicut is the anglicized form of Kalikooth, the name used by Arabs to refer to Kozhikode. ", 
+		"Thumbnail_Image":"data/kerala/travel/districts/kozhikode/320px-Kappad_beach_2.jpg", 
+		"Thumbnail_Image_Alt":"View of Kappad beach", 
+		"Landing_Image":"", 
+		"Landing_Image_Alt":"", 
+		"Actions": 
+		[
+		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=9.595,76.531&q=9.595,76.531&hl=en&t=m&z=12"}
+		]
+	}	,
+	{
+		"Title":"Kollam", 
+		"Brief_Description":"The district has a cross-section of Kerala's natural attributes; it is endowed with a long coastline, a major Arabian Sea seaport and an inland lake (Ashtamudi Lake). Kollam is the capital of Kerala's cashew industry. Plains, mountains, lakes, lagoons and backwaters, forests, farmland and rivers make up the topography of the district.", 
+		"Thumbnail_Image":"data/kerala/travel/districts/kollam/Paravur_backwaters_&_beaches.jpg", 
+		"Thumbnail_Image_Alt":"Scenic beauty of backwaters and beaches", 
+		"Landing_Image":"", 
+		"Landing_Image_Alt":"", 
+		"Actions": 
+		[
+		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=8.8,76.6&q=8.8,76.6&hl=en&t=m&z=12"}
+		]
+	} 	
 
 	]
 }
