@@ -14,7 +14,7 @@
 		]
 	} ,
 	{
-		"Title":"Ernakulam (also Kochi Cochin)", 
+		"Title":"Ernakulam/ Cochin", 
 		"Brief_Description":"Ernakulam is known as the commercial capital of Kerala. The district is famous for its ancient temples, churches, and mosques. ", 
 		"Thumbnail_Image":"data/kerala/travel/districts/ernakulam/kochifishingnet.jpg", 
 		"Thumbnail_Image_Alt":"Chinese Fishing Net", 
@@ -95,18 +95,6 @@
 		"Actions": 
 		[
 		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=10.783333,76.65&q=10.783333,76.65&hl=en&t=m&z=12"}
-		]
-	},
-	{
-		"Title":"Pathanamthitta", 
-		"Brief_Description":"Pathanamthitta is known as the headquarters of pilgrimage tourism, for the large number of pilgrims it receives. Having three rivers and a forest cover which includes a tiger reserve, the district also attracts many wildlife and nature enthusiasts. The district tourism gave Pathanamathitta district the caption 'The Abode of God' because of its importance in pilgrimage. ", 
-		"Thumbnail_Image":"data/kerala/travel/districts/pathanamthitta/240px-Aranmula_Temple.JPG", 
-		"Thumbnail_Image_Alt":"Temple at Aranmula", 
-		"Landing_Image":"", 
-		"Landing_Image_Alt":"", 
-		"Actions": 
-		[
-		{"Title": "Map", "Url":"http://maps.google.com/maps?ll=9.27,76.78&q=9.27,76.78&hl=en&t=m&z=12"}
 		]
 	},
 	{

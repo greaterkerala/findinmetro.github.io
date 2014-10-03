@@ -1,24 +1,25 @@
-<div class="well" ng-controller="Listing" ng-init="init();">
+<div ng-controller="Listing" ng-init="init();">
 	<h3>{{module.Title}}</h3>
 	<hr>
-	<div class="row clearfix" style="border:1px">
-		<div  ng-repeat="rows in list | partition:2">
+	<div style="border:1px">
+		<div ng-repeat="cols in list | partition:2">
 			<div class="col-md-6">
-				<div class="span6" ng-repeat="item in rows">					
+				<div  ng-repeat="row in cols">					
 					<div class="row thumbnail">
-						<img class="img-rounded img-responsive fullwidth"  alt="{{item.Thumbnail_Image_Alt}}" src="{{item.Thumbnail_Image}}" />
+						<img class="img-rounded img-responsive fullwidth"  alt="{{row.Thumbnail_Image_Alt}}" src="{{row.Thumbnail_Image}}" />
 						<div class="caption">
 							<h4>
-								{{item.Title}}
+								{{row.Title}}
 							</h4>
 							<p>
-								{{item.Brief_Description}}
+								{{row.Brief_Description}}
 							</p>
-							<p ng-repeat="action in item.Actions">
+							<p ng-repeat="action in row.Actions">
 								<a  class="btn btn-primary" href="{{action.Url}}">{{action.Title}}</a> 
 							</p>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>

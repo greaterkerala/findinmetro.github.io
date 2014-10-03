@@ -11,7 +11,7 @@ function LayoutCtrl ($scope, $http, $location, Utilities, metadataService) {
 			$scope.metadata  = data;
 		})
 		.error(function (data, status, headers, config) {
-			alert("Failed to load videos");
+			alert("Failed to load content for " + $location.path() );
 		});
 
 	}
