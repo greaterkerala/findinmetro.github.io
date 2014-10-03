@@ -1,7 +1,7 @@
-<div class="well" ng-controller="Dynamicyoutube" ng-init="init();">
-	<h3>{{module.Title}}</h3>
+<div ng-controller="Dynamicyoutube" ng-init="init();">
+	<h3 class="orange">{{module.Title}}</h3>
 	<hr>
-	<div ng-repeat="nn in data">
+	<div class="well"  ng-repeat="nn in data">
 		<em> {{nn.title["$t"]}}</em>
 		<iframe width="100%" height="{{module.Data.height}}" src="{{buildyoutubeurl(nn.id['$t']) | trusted}}" frameborder="0" allowfullscreen></iframe>
 		<br><br>
