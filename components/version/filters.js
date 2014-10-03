@@ -19,8 +19,24 @@ angular.module('myApp.version.interpolate-filter', [])
 .filter('partition', function() {
 	var cache = {};
 	var filter = function(arr, size) {
-		if (!arr) { return; }
 		var newArr = [];
+		if (!arr) { return; }
+		if (arr.length == 0) { return newArr;}
+
+		var nextC = 0;
+
+		var retArr = [];
+		for (var i = size - 1; i >= 0; i--) {
+			retArr.push([]);
+		};
+
+		for (var i = arr.length - 1; i >= 0; i--) {
+			retArr[nextC].push(arr[i]);
+			if(nextC  ++ == size-1){
+				nextC = 0;
+			}
+		};
+
 		for (var i=0; i<arr.length; i+=size) {
 			newArr.push(arr.slice(i, i+size));
 		}
