@@ -1,1 +1,0 @@
-function RSSCtrl(a){a.news=[];a.url=null;a.init=function(){a.setFeedUrl(a.module.Data)};a.getreadabledate=function(a){return a+" - <b>"+moment(a).fromNow()+"</b> "};a.setFeedUrl=function(b){a.url=b;b=new google.feeds.Feed(b);b.setNumEntries(a.module.limit);b.load(function(b){a.news=b.feed.entries;a.$apply()})}};
