@@ -3,10 +3,10 @@ del "javascript\script.js"
 touch "javascript\script.js"
 
 
-type "bower_components\jquery\final\jquery.js"  >>"javascript\script.js"
-type "bower_components\angular\angular.js" >>"javascript\script.js"
-type "bower_components\angular-route\angular-route.js" >>"javascript\script.js"
-type "bower_components\angular-animate\angular-animate.js" >>"javascript\script.js"
+type "bower_components\jquery\final\jquery.min.js"  >>"javascript\script.js"
+type "bower_components\angular\angular.min.js" >>"javascript\script.js"
+type "bower_components\angular-route\angular-route.min.js" >>"javascript\script.js"
+type "bower_components\angular-animate\angular-animate.min.js" >>"javascript\script.js"
 type "bower_components\bootstrap\lib\js\bootstrap.min.js" >>"javascript\script.js"
 
 type "app.js"  >>"javascript\script.js"
