@@ -73,5 +73,10 @@ body
   background: linear-gradient(to bottom,  #8fc400 0%,#8fc400 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', endColorstr='#8fc400',GradientType=0 ); /* IE6-9 */
 
+  text-align: justify;
+  font-family: verdana;
+}
 
+h1, h2, h3, h4, h5,h6,h7{
+  font-family: 'Montserrat';
 }
