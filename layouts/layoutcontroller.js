@@ -1,8 +1,8 @@
 'use strict';
 
 function LayoutCtrl ($scope, $http, $location, Utilities, metadataService) {
-
 	$scope.metadata = [];
+
 	
 	$scope.initlayout = function() {
 

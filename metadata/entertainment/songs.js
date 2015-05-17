@@ -8,7 +8,8 @@
 	],
 	"contentpanemodules" : 
 	[
-		{"type":"lyrics", "Title": "Malayalam Lyrics", "Data": {"url":"data/kerala/lyrics/index.js"}}
+		
+		{"type":"listing", "Title": "Songs & Lyrics", "Data": {"url":"data/kerala/entertainment/songs/listing.js"}}
 	],
 	"rightpanemodules":
 	[

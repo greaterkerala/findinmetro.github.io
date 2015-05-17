@@ -10,16 +10,15 @@
 	],
 	"contentpanemodules" : 
 	[
-	{"type":"rss",  "Title": "News Headlines",   "Data": "http://feeds.feedburner.com/mathrubhumi", "limit":"50" }
+	{"type":"rss",  "Title": "News Headlines",   "Data": "http://feeds.feedburner.com/mathrubhumi", "limit":"10" }
 	],
 	"rightpanemodules":
 	[
-	{"type":"flickr", "Title": "New Photos", "Data": {"url":"https://api.flickr.com/services/feeds/photos_public.gne?tags=kerala landscape", "limit":"20"}}
+	{"type":"flickr", "Title": "New Photos", "Data": {"url":"https://api.flickr.com/services/feeds/photos_public.gne?tags=kerala landscape", "limit":"5"}}
 	],
 
 	"bottomscrollmodules":
 	[	
-	{"type":"html", "Title": "Keralam", "Data": "data/kerala/about/about.html"}
 	]
 
 }

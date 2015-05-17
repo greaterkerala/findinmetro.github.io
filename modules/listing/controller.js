@@ -4,6 +4,7 @@ function Listing ($scope, $http) {
 	$scope.list = [];
 
 
+
 	$scope.init = function() {
 		$http.get($scope.module.Data.url)
 		.success(function (data) {
