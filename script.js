@@ -2,12 +2,8 @@ angular.module('todoApp', [])
 
 
 
-  .service('root', function () {
-    var root = new api.Leaf("Root");
-    return root;
-  })
 
-  .controller('TodoListController', function (root, $timeout) {
+  .controller('TodoListController', function ( $timeout) {
     var todoList = this;
 
     todoList.arr = [];
