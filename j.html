@@ -2,12 +2,12 @@
 <html ng-app="todoApp">
 
 <head>
-  <script src="angular.min.js"></script>
-  <script src="api.js"></script>
-  <script src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <script src="./angular.min.js"></script>
+  <script src="./api.js"></script>
+  <script src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css">
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="./bootstrap.min.css">
 </head>
 
 <body ng-controller="TodoListController as todoList">
@@ -17,7 +17,7 @@
       <div class="col-md-6">
         <div class="row">
           <div class="col-md-12">
-             <h2 ng-repeat="item in todoList.arr">{{item}}</h2>
+             <h2 ng-repeat="item in todoList.arr track by $index">{{item}}</h2>
           </div>
           <hr>
           <input type="text" ng-model="todoList.calculatedValue">
@@ -40,7 +40,7 @@
             {{todoList.total}}
           </div>
 
-          <h2 ng-repeat="item in todoList.results">{{item}}</h2>
+          <h2 ng-repeat="item in todoList.results track by $index">{{item}}</h2>
           
         </h3>
       </div>
@@ -48,8 +48,8 @@
   </div>
 
 </body>
-<script src="jquery.min.js"></script>
+<script src="./jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="bootstrap.min.js"></script>
+<script src="./bootstrap.min.js"></script>
 
 </html>
