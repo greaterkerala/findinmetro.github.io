@@ -30,7 +30,7 @@ angular.module('todoApp', [])
       todoList.ticks = 0;
       todoList.arr = [];
       todoList.visible = false;
-      for (var index = 0; index < 7; index++) {
+      for (var index = 0; index < 5; index++) {
         todoList.arr.push(todoList.createRandomSet());
       }
       if (todoList.timer) {
