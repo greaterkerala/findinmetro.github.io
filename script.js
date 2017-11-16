@@ -10,9 +10,9 @@ angular.module('todoApp', [])
     todoList.visible = false;
     todoList.ticks = 0;
     todoList.createRandomSet = function () {
-      let isnegative = false;
-      let currentSum = 0;
-      let rnd = 0;
+      var isnegative = false;
+      var currentSum = 0;
+      var rnd = 0;
       if (todoList.arr.length % 2 === 0 && todoList.arr.length !==0) {
         isnegative = true;
         currentSum = todoList.sum();
@@ -46,7 +46,7 @@ angular.module('todoApp', [])
     todoList.results = [];
 
     todoList.sum = function () {
-      let total = 0;
+      var total = 0;
       for (var index = 0; index < todoList.arr.length; index++) {
         var item = todoList.arr[index];
         total += eval(item);
