@@ -21,7 +21,7 @@
              <h2 ng-repeat="item in todoList.arr track by $index">{{item}}</h2>
           </div>
           <hr>
-          <input type="text" ng-model="todoList.calculatedValue">
+          <input type="number" pattern="\d*"  ng-model="todoList.calculatedValue">
         </div> 
         <button type="button" class="btn btn-default" ng-click="todoList.check()">
           Check
