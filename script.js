@@ -18,7 +18,7 @@ angular.module('todoApp', [])
         currentSum = todoList.sum();
         rnd = - (Math.floor(Math.random() * (currentSum - 0 + 1)) + 0);
       }else{
-        rnd = Math.floor((Math.random() * 1000) + 1);
+        rnd = Math.floor((Math.random() * 100) + 1);
       }
       console.log(todoList.arr.length + " - "+isnegative +" - "+rnd);
 
