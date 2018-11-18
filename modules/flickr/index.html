@@ -1,9 +1,0 @@
-<div  ng-controller="Flickr" ng-init="init();">
-	<h3 class="purple">{{module.Title}}</h3>
-	<hr>
-	<ul class="well" ng-repeat="nn in images">
-		<img class="img-rounded img-responsive" style="width: 100%" src={{nn.src}} />
-		<p ng-bind-html="nn.alt || nn.p |  unsafe"></p>	
-		<br>
-	</ul> 
-</div>
